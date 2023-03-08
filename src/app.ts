@@ -28,8 +28,8 @@ export const initializeServer = (): ProxyServer => {
       beforeSendResponse,
     },
     webInterface: {
-      enable: <number>WEB_INTERFACE_PORT ? true : false,
-      webPort: <number>WEB_INTERFACE_PORT,
+      enable: WEB_INTERFACE_PORT ? true : false,
+      webPort: Number(WEB_INTERFACE_PORT),
     },
     silent: true,
     forceProxyHttps: true,
